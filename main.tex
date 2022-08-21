@@ -51,11 +51,21 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+    \end{tabular*}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubheadingSingleLine}[2]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{#3} & \textit{#4} \\
-    \end{tabular*}\vspace{-5pt}
+      \textbf{#1} & \textbf{#2} \\
+    \end{tabular*}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
@@ -75,89 +85,79 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Daniel Leboff}} & Email: \href{mailto:}{danny.leboff@gmail.com}\\
-  \href{https://linkedin.com/in/danny-leboff}{LinkedIn: danny-leboff} \\
-  \href{https://github.com/Techatonic}{Github: ~~github.com/Techatonic} \\
+  \textbf{{\LARGE Daniel Leboff}}\\
+  \href{https://linkedin.com/in/danny-leboff}{LinkedIn: danny-leboff} & \href{mailto:}{danny.leboff@gmail.com} \\
+  \href{https://github.com/Techatonic}{Github: github.com/Techatonic} & (+44)7920406639 \\
+  \vspace{5pt}
 \end{tabular*}
+\\
+{\large \textbf{Third year Computer Science undergraduate student at University of Cambridge.}}
 
+\vspace{10pt}
 %-----------EDUCATION-----------------
-\section{~~Education}
+\section{\textbf{Education}}
   \resumeSubHeadingListStart
       \resumeSubheading
-      {Trinity Hall, University of Cambridge}{Cambridge, United Kingdom}
-      {Bachelor of Arts - Computer Science}{2020 - 2023}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Algorithms, Discrete Mathematics, Databases, Object-oriented programming, Machine Learning, Data Science, Semantics of Programming Languages, Compiler Construction, Logic and Proof, Artificial Intelligence, Formal Models of Language}}}
+      {Trinity Hall, University of Cambridge}{2020-~~~~~~}
+      {BA - Computer Science}{}
+      {\small\newline{} Algorithms, Discrete Mathematics, Databases, Object-Oriented Programming, Machine Learning, Data Science, Semantics of Programming Languages, Compiler Construction, Logic and Proof, Artificial Intelligence, Formal Models of Language}
       \resumeSubheading
-      {JFS School}{London, United Kingdom}
-      {\textbf{A Levels}}{2018-2020}
-      {\scriptsize \textit{ \footnotesize{\newline{} Mathematics - A*, Further Mathematics - A*, Physics - A*, Computer Science - A*}}}
-      \resumeSubheading
-      {JFS School}{London, United Kingdom}
-      {\textbf{GCSEs}}{2013-2018}
-      {\scriptsize \textit{ \footnotesize{\newline{} 8 9s, 2 8s, 1 A* + A in Free Standing Maths Qualification}}}
+      {JFS School}{2018-2020}
+      {A Levels}{}
+      {\small
+        \newline{} Mathematics A*, Further Mathematics A*, Physics A*, Computer Science A* 
+        \newline{} British Mathematics Olympiad - Certificate of Distinction (2018)
+        \newline{} Extended Project Qualification - An Evaluation of the P vs NP Problem (2019)
+      }
+      
+      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{GCSEs} & \textbf{2013-2018}\\
+      \end{tabular*}
+      {\small \newline{} 8 9s, 2 8s, 1 A*}
     \resumeSubHeadingListEnd
 	    
 \vspace{-5pt}
-\section{Skills}
+\section{\textbf{Skills}}
     \resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~Python, Java, SQL, TypeScript, C\#, OCaml, Prolog}
+	\resumeSubItem{Languages}{~~~~~~Python, Java, SQL, OCaml, TypeScript, C\#, Prolog}
 	\resumeSubItem{Frameworks}{~~~~React Native, Unity3D}
 	\resumeSubItem{Tools}{~~~~~~~~~~~~~~GIT, MySQL, MS SQL, REST API}
     \resumeSubHeadingListEnd
 \vspace{-5pt}
 
-\section{Experience}
+\section{\textbf{Experience}}
   \resumeSubHeadingListStart
-    \resumeSubheading{Softwire}{London, United Kingdom}
-    {Software Developer Intern}{July 2022 - August 2022}
-    \resumeItemListStart
-        \resumeItem{React Native application}
-          {Co-developed a react native application for a turtle conservation charity in Kenya}
-          \resumeItem{REST API}
-          {REST API for communication between client and server}
-      \resumeItemListEnd
-\vspace{3pt}
-    \resumeSubheading
-		{Permutable Technologies}{London, United Kingdom / Remote}
-		{Data Science Intern}{July 2021 - September 2021}
-		\resumeItemListStart
-        \resumeItem{NLP document analysis}
-          {Designed and developed an algorithm using NLP packages to analyse and grade the sustainable nature of companies to aid prospective investors}
-		\resumeItemListEnd
-    \resumeSubheading
-        {Trinity Hall, University of Cambridge}{Cambridge, United Kingdom}
-        {JCR Webmaster}{February 2021 - March 2022}
-        \resumeItemListStart
-            \item Maintained and enhanced the JCR website, resolved issues with and ran the college's accommodation balloting system. Participated in regular meetings with senior college figures.
-        \resumeItemListEnd
+    \resumeSubheadingSingleLine{Softwire - Software Developer Intern}{Summer 2022}
+    {\small Co-designed and developed a React Native application for a turtle conservation charity in Kenya. Created REST API endpoints on the backend for communication between client and server.}
+    \resumeSubheadingSingleLine{Permutable Technologies - Data Science Intern}{Summer 2021}
+    {\small Designed and developed an NLP algorithm to analyse and grade the sustainable nature of companies to aid prospective investors.}
+    \resumeSubheadingSingleLine{Trinity Hall, University of Cambridge - JCR Webmaster}{2021-2022}
+    {\small Enhanced and maintained the JCR website, resolved issues and ran the College's accommodation balloting system. Participated in regular meetings with senior College figures.}
+    \resumeSubheadingSingleLine{Birkbeck, University of London - Work Experience}{2019}
+    {\small Installed and upgraded computers and resolved software issues in the Systems Department.}
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \vspace{-5pt}
-\section{Projects}
+\section{\textbf{Projects}}
 \resumeSubHeadingListStart
-\resumeItem{Android application - Killer Sudoku game}
-{An application involving the generation of a Killer Sudoku, a test using constraint satisfaction and backtracking to ensure there is a unique solution, and a front-end to display the sudoku in a minimalistic UI. Tech: Java, Prolog, Kotlin, Firebase (January 2022 - )}
-\resumeSubItem{Safe-Building Engineering Team}{Project-managed a national safe-building competition entry, involving the design, documentation, development and testing, and presentation of a safe. (2019)}
-\resumeSubItem{Android applications - Unity3D games}{Two applications developed using Unity3D and C\#, released on the Google Play Store. (2016, 2018)}
+\resumeItem{Killer Sudoku}
+{Created an Android application to generate Killer Sudokus and ensure they have unique solutions using constraint satisfaction and backtracking. (2022) \\ Tech stack: Java, Prolog, Kotlin, Firebase}
+\resumeSubItem{Safe-Building Competition}{Project-managed a team in a national safe-building competition, involving the design, documentation, development and testing, and presentation of a safe. (2019)}
+\resumeSubItem{Unity3D Games}{Two android applications developed using Unity3D, released on the Google Play Store. (2016, 2018) \\ Tech stack: Unity3D, C\#, PHP, SQL}
 
 \resumeSubHeadingListEnd
 %--------Competitions--------------
 \vspace{-5pt}
-\section{Competitions}
+\section{\textbf{Competitions}}
 \resumeSubHeadingListStart
-    \item Hack Cambridge 2022
-    \item Reply Challenge 2019/20
-    \item Google CodeJam 2017/18/19
-    \item CodeChef Snackdown 2019
-    \item CodeFights Polyglot Marathon 2017
+    \item\small Hack Cambridge (2022) \vspace{-5pt}
+    \item\small Reply Challenge (2019, 2020) \vspace{-5pt}
+    \item\small Google CodeJam (2017, 2018, 2019) \vspace{-5pt}
+    \item\small CodeChef Snackdown (2019) \vspace{-5pt}
+    \item\small CodeFights Polyglot Marathon (2017)
 \resumeSubHeadingListEnd
-%-----------Awards-----------------
-\section{Honors and Awards}
-\begin{description}[font=$\bullet$]
-    \item British Mathematics Olympiad - Certificate of Distinction 2018
-\end{description}
 %---------Interests---------------
-\section{Interests}
-Rugby Fives (University team), Tennis (College captain), Football (College team), Coxing (College crew)
+\section{\textbf{Interests}}
+\small Rugby Fives (University team, Half-Blue), Pool (University team), Tennis (College captain), Football (College team), Rowing (College crew)
 \end{document}
